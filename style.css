@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#login-area{
+    background-image: url(images/Sovereign-Wealth-Fund-Savings.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+.loginDiv{
+    padding: 100px;
+}
+.loginDiv .welcome{
+    color: white;
+    /* text-shadow: 0 0 3px rgb(0, 255, 21), 0 0 5px #28a745; */
+    text-shadow: 2px 2px 5px #28a745;
+}
+
+/* input start */
+.submit-area{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    padding: 50px;   
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgb(102, 102, 102);
+    background-color:white;
+}
+.submit-area h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #28a745;
+}
+.submit-area input{
+    color: gray;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #999;
+    outline: none;
+}
+.submit-area form div{
+    position: relative;
+}
+.submit-area form div label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+.submit-area input:focus ~ label, 
+.submit-area input:valid ~ label
+{
+    top: -12px;
+    left: 0;
+    color:#28a745;
+    font-size: 16px;
+    font-weight: bold;
+}
+.submit-area input:focus,
+.submit-area input:valid
+{
+    border-bottom: 2px solid #28a745;
+}
+/* end box */
+
+.tr-submit-area{
+    margin: 50px 20px 0 20px;
+    padding: 50px;   
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    background-color:white;
+}
+
+#transaction-area{
+    display: none;
+    background-color: rgb(222, 253, 222);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+.status{
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
